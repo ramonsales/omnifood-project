@@ -94,7 +94,7 @@ h1 {
 
 h2 {
     font-size: 180%;
-    word-spacin: 2px;
+    word-spacing: 2px;
     text-align: center;
     margin-bottom: 30px;
     letter-spacing: 1px;
@@ -216,6 +216,15 @@ header {
     margin-top: 20px;
 }
 
+.logo-black {
+    display: none;
+    height: 50px;
+    width: auto;
+    float: left;
+    margin: 5px 0;
+}
+
+/* Main navi */
 .main-nav {
     float: right;
     list-style: none;
@@ -243,6 +252,29 @@ header {
 .main-nav li a:active {
     border-bottom: 2px solid #e67e22;
 }
+
+/* Sticky navi */
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.98);
+    box-shadow: 0 2px 2px #efefef;
+    z-index: 9999;
+}
+
+.sticky .main-nav { margin-top: 18px; }
+
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited {
+    color: #555;
+    padding: 16px 0;
+}
+
+.sticky .logo { display: none; }
+.sticky .logo-black { display: block; }
+
 
 /* ------------------------------------------------------------ */
 /* FEATURES */
@@ -333,16 +365,16 @@ header {
 
 .works-step div {
     color: #e67e22;
-    border: 2px solid #e67e22;
-    display: inline-block;
-    border-radius: 50%;
+    font-size: 150%;
     height: 54px;
     width: 54px;
+    border: 2px solid #e67e22;
+    border-radius: 50%;
+    display: inline-block;
     text-align: center;
-    padding: 5px;
-    float: left;
-    font-size: 150%;
     margin-right: 25px;
+    float: left;
+    padding: 5px;
 }
 
 .btn-app:link,
